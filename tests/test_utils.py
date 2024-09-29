@@ -95,7 +95,7 @@ class TestLoadDataset:
         mock_load_hf_dataset.assert_called_with(*expected_args)
 
     def test_load_dataset_json(self, mocker: MockerFixture):
-        mock_load_hf_dataset = mocker.patch("hf_datasets.utils.load_hf_dataset")
+        mock_load_hf_dataset = mocker.patch("datasets_plus.utils.load_hf_dataset")
         load_dataset("test.json")
         mock_load_hf_dataset.assert_called_with("test.json", None, None)
 
