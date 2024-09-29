@@ -4,7 +4,7 @@ import datasets
 import pytest
 from pytest_mock import MockerFixture
 
-from hf_datasets import load_dataset, load_hf_dataset
+from datasets_plus import load_dataset, load_hf_dataset
 
 
 class TestLoadHFDataset:
@@ -90,7 +90,7 @@ class TestLoadDataset:
         ],
     )
     def test_load_dataset(self, mocker: MockerFixture, input_name, expected_args):
-        mock_load_hf_dataset = mocker.patch("hf_datasets.utils.load_hf_dataset")
+        mock_load_hf_dataset = mocker.patch("datasets_plus.utils.load_hf_dataset")
         load_dataset(input_name)
         mock_load_hf_dataset.assert_called_with(*expected_args)
 

@@ -1,4 +1,4 @@
-from hf_datasets import load_dataset
+from datasets_plus import load_dataset
 
 # Load SQuAD v2.0 validation set
 squad_v2_val = load_dataset("squad_v2::validation")

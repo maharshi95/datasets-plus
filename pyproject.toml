@@ -3,7 +3,7 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hf-datasets"
+name = "datasets-plus"
 version = "0.1.0"
 description = "A wrapper for HuggingFace datasets with additional utilities"
 keywords = ["huggingface", "datasets", "wrapper", "utilities"]
@@ -25,13 +25,13 @@ classifiers = [
 requires-python = ">=3.9"
 
 [project.urls]
-Homepage = "https://github.com/maharshi95/hf-datasets"
+Homepage = "https://github.com/maharshi95/datasets-plus"
 
 [tool.setuptools]
-packages = ["hf_datasets"]
+packages = ["datasets_plus"]
 
 [tool.setuptools.package-data]
-hf_datasets = ["py.typed"]
+datasets_plus = ["py.typed"]
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }

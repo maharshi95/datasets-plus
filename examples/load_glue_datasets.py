@@ -1,4 +1,4 @@
-from hf_datasets import load_dataset
+from datasets_plus import load_dataset
 
 dataset_names = [
     "glue:mnli:validation_matched",

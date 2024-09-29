@@ -1,6 +1,6 @@
 import pytest
 
-from hf_datasets import process_dataset_name
+from datasets_plus import process_dataset_name
 
 
 @pytest.mark.parametrize(
